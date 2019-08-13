@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".new_order_sell">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/new_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary">
+
+    </android.support.v7.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@string/fontfamily"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginStart="15dp"
+                android:textSize="20dp"
+                android:text="Request for new dish"/>
+
+            <EditText
+                android:id="@+id/buy_dishname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/custom_text"
+                android:fontFamily="@string/fontfamily"
+                android:hint="Enter Dish Name"
+                android:padding="10dp"
+                android:textSize="20dp"
+                android:textCursorDrawable="@null" />
+
+
+            <EditText
+                android:id="@+id/edit_quantity"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/custom_text"
+                android:fontFamily="@string/fontfamily"
+                android:hint="Enter Quantity"
+                android:padding="10dp"
+                android:textSize="20dp"
+                android:textCursorDrawable="@null"/>
+
+            <EditText
+                android:id="@+id/editDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/custom_text"
+                android:ems="10"
+                android:fontFamily="@string/fontfamily"
+                android:hint="Enter Description"
+                android:inputType="textMultiLine"
+                android:padding="10dp"
+                android:textSize="20dp"
+                android:textCursorDrawable="@null"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:textSize="18dp"
+                android:text="Select food category"/>
+
+            <Spinner
+                android:id="@+id/food_categories_spinner_buy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp" />
+
+            <EditText
+                android:id="@+id/new_food_category"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/custom_text"
+                android:ems="10"
+                android:fontFamily="@string/fontfamily"
+                android:hint="Enter new category"
+                android:inputType="text"
+                android:padding="10dp"
+                android:textSize="20dp"
+                android:textCursorDrawable="@null"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/lblcooktime"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:ems="10"
+                    android:fontFamily="@string/fontfamily"
+                    android:padding="10dp"
+                    android:text="Expected Time"
+                    android:textSize="20dp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:id="@+id/buy_expected_date"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:textCursorDrawable="@null"/>
+
+                    <Button
+                        android:id="@+id/btn_expected_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="SELECT Date" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:id="@+id/buy_expected_time"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:textCursorDrawable="@null"/>
+
+                    <Button
+                        android:id="@+id/btn_expected_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="SELECT TIME" />
+                </LinearLayout>
+
+
+                <Button
+                    android:id="@+id/buy_place_order"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:background="@color/colorPrimary"
+                    android:fontFamily="@string/fontfamily"
+                    android:text="Submit"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="20dp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

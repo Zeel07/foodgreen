@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "1087261204927",
+    "firebase_url": "https://foodgreen-daf48.firebaseio.com",
+    "project_id": "foodgreen-daf48",
+    "storage_bucket": "foodgreen-daf48.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1087261204927:android:6abc0b2338904a80",
+        "android_client_info": {
+          "package_name": "com.example.foodgreen"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1087261204927-di7cigcu0m51f5c714rnec994v4og26n.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCpHXknYx3eL2pUJLDSpTqNQ4oxbCgiGSc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

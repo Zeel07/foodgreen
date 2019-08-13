@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BuyView">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/new_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary">
+
+    </android.support.v7.widget.Toolbar>
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="60dp"
+        android:orientation="vertical">
+        <ListView
+            android:id="@+id/foodlist"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            tools:layout_editor_absoluteX="8dp" />
+
+    </RelativeLayout>
+    <ImageButton
+        android:id="@+id/filterbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|right|end"
+        android:paddingRight="10dp"
+        android:paddingTop="60dp"
+        android:background="@null"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/filter_symbol" />
+    <ImageButton
+        android:id="@+id/addbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:paddingBottom="65dp"
+        android:paddingRight="10dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:background="@null"
+        android:src="@drawable/add" />
+
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:layout_alignParentBottom="true"
+    android:background="#CBBCBC"
+    android:orientation="horizontal">
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:gravity="center">
+        <ImageButton
+            android:id="@+id/homebtn"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:tint="@color/colorWhite"
+            android:src="@drawable/home"
+            android:text="Home" />
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5dp"
+            android:layout_below="@+id/homebtn"
+            android:textStyle="bold"
+            android:text="HOME" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:gravity="center">
+        <ImageButton
+            android:id="@+id/buybtn"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:tint="@color/colorPrimary"
+            android:src="@drawable/buy"
+            android:text="Buy" />
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:paddingLeft="12dp"
+            android:layout_below="@+id/buybtn"
+            android:textStyle="bold"
+            android:text="BUY"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:gravity="center">
+        <ImageButton
+            android:id="@+id/sellbtn"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:tint="@color/colorWhite"
+            android:src="@drawable/sell"
+            android:text="Sell" />
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:layout_below="@+id/sellbtn"
+            android:textStyle="bold"
+            android:text="SELL"/>
+    </LinearLayout>
+</LinearLayout>
+
+</RelativeLayout>

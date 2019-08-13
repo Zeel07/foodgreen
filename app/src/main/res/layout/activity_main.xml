@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/food2"
+    tools:context=".MainActivity">
+
+    <View
+        android:id="@+id/blurimage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/black"
+        android:layout_alignParentBottom="true"
+        android:alpha="0.5">
+    </View>
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/new_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary">
+
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_marginTop="200dp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:src="@drawable/fg"/>
+        <TextView
+            android:id="@+id/hometext"
+            android:layout_width="300dp"
+            android:text="Create your own virtual kitchen"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textSize="30dp"
+            android:layout_height="wrap_content"
+            android:textColor="#F9FDFA" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:background="#D2C9C9"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:gravity="center">
+            <ImageButton
+                android:id="@+id/homebtn"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:tint="@color/colorPrimary"
+                android:src="@drawable/home"
+                android:text="Home" />
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:paddingLeft="5dp"
+                android:layout_below="@+id/homebtn"
+                android:textStyle="bold"
+                android:text="HOME" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:gravity="center">
+            <ImageButton
+                android:id="@+id/buybtn"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:tint="@color/colorWhite"
+                android:background="@null"
+                android:src="@drawable/buy"
+                android:text="Buy" />
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:paddingLeft="12dp"
+                android:layout_below="@+id/buybtn"
+                android:textStyle="bold"
+                android:text="BUY"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:gravity="center">
+            <ImageButton
+                android:id="@+id/sellbtn"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:tint="@color/colorWhite"
+                android:background="@null"
+                android:src="@drawable/sell"
+                android:text="Sell" />
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:layout_below="@+id/sellbtn"
+                android:textStyle="bold"
+                android:text="SELL"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>
